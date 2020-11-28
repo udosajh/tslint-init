@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import fs = require("fs");
 import shelljs = require("shelljs");
 import path = require("path");

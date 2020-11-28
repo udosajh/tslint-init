@@ -7,7 +7,7 @@
         "auto-compile": "npm run lint && tsc -w -p tsconfig.src.json",
         "start": "node dist/index.js",
         "compile": "npm run lint && tsc -p tsconfig.src.json",
-        "lint": "tslint -c tslint.json -p tsconfig.json"
+        "lint": "tslint -c tslint.json -p tsconfig.src.json"
     },
     "repository": {
         "type": "git",
@@ -41,5 +41,6 @@
     },
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
-    }
+    },
+    "bin": "dist/index.js"
 }
