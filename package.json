@@ -1,25 +1,29 @@
 {
-     "name": "tsconfig-init",
+     "name": "tslint-init",
      "version": "1.0.0",
-     "description": "Create ts config files in the current directory",
+     "description": "Create ts lint file in the current directory",
      "main": "./dist/index.js",
      "scripts": {
-          "auto-compile": "npm run lint && tsc -w -p ./tsconfig.src.json",
-          "start": "node ./dist/index.js --help",
-          "compile": "npm run lint && tsc -p ./tsconfig.src.json",
+          "auto-compile": "npm run lint && tsc -w -p tsconfig.src.json",
+          "start": "node ./dist/index.js",
+          "compile": "npm run lint && tsc -p tsconfig.src.json",
           "lint": "tslint -c tslint.json -p tsconfig.src.json"
      },
      "repository": {
           "type": "git",
-          "url": "git+https://github.com/udosajh/tsconfig-init.git"
+          "url": "git+https://github.com/udosajh/tslint-init.git"
      },
-     "keywords": [],
-     "author": "",
+     "keywords": [
+          "tslint default file",
+          "tslint init",
+          "tslint config"
+     ],
+     "author": "udosajh",
      "license": "ISC",
      "bugs": {
-          "url": "https://github.com/udosajh/tsconfig-init/issues"
+          "url": "https://github.com/udosajh/tslint-init/issues"
      },
-     "homepage": "https://github.com/udosajh/tsconfig-init#readme",
+     "homepage": "https://github.com/udosajh/tslint-init#readme",
      "devDependencies": {
           "@types/js-beautify": "^1.13.1",
           "@types/node": "12.12.6",
