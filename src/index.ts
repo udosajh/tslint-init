@@ -91,7 +91,7 @@ const tslint = {
 
 
 const tsconfigBaseFilePath = currentDirPath + path.sep + "tslint.json";
-const indentOpt = { "indent_size": args.indentation };
+const indentOpt: jsBeautify.JSBeautifyOptions = { "indent_size": args.indentation, "wrap_line_length": 1 };
 fs.writeFileSync(tsconfigBaseFilePath, jsBeautify.js_beautify(JSON.stringify(tslint), indentOpt));
 
 if (args.lintCommand) {
