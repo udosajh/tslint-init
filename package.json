@@ -1,6 +1,6 @@
 {
     "name": "tslint-init",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Create ts lint file in the current directory",
     "main": "./dist/index.js",
     "scripts": {
